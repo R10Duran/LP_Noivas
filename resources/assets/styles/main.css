@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -48,4 +49,224 @@ a {
 
 li {
   list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 2rem 0;
+  top: 0;
+  position: fixed;
+  background: #fff;
+  width: 100vw;
+  background: #000;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo-nav {
+  max-width: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-banner {
+  margin-top: 11rem;
+}
+.s-banner .banner-principal {
+  height: 80vh;
+}
+.s-banner .banner-principal img {
+  height: 100%;
+}
+
+.s-release {
+  margin: 3rem 0;
+}
+.s-release .container .release-infos h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+.s-release .container .release-infos .text-release {
+  display: flex;
+  gap: 4rem;
+}
+.s-release .container .release-infos .text-release p {
+  margin: 2rem 0;
+}
+.s-release .container .release-infos .text-release .p-text-release {
+  width: 50%;
+}
+.s-release .container .release-infos .text-release .p-text-release ul li {
+  padding-left: 2rem;
+}
+.s-release .container .release-infos .text-release .img-text-release {
+  width: 50%;
+  background-color: #c4c4c4;
+  padding: 2%;
+}
+
+.s-history {
+  margin: 3rem 0;
+}
+.s-history .container .info-history h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+.s-history .container .info-history .history-content .history-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 5rem 0;
+}
+.s-history .container .info-history .history-content .history-item img {
+  max-width: 40%;
+  width: 50%;
+}
+.s-history .container .info-history .history-content .history-item p {
+  width: 50%;
+}
+.s-history .container .info-history .history-content .reverse {
+  flex-direction: row-reverse;
+}
+
+.s-galery {
+  margin: 3rem 0;
+}
+.s-galery .container .galery-info h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+.s-galery .container .galery-info .galery-content {
+  display: flex;
+  margin: 4rem 0;
+  gap: 6rem;
+}
+.s-galery .container .galery-info .galery-content .galery-itens {
+  text-align: center;
+  border: 1px solid red;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.s-depoimentos {
+  margin: 3rem 0;
+}
+.s-depoimentos .container .depoimentos-info h2 {
+  margin: 2rem 0;
+  text-align: center;
+}
+.s-depoimentos .container .depoimentos-info .depoimentos-content {
+  display: flex;
+  gap: 6rem;
+  width: 100%;
+}
+.s-depoimentos .container .depoimentos-info .depoimentos-content .depoimentos-itens {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  width: 33.3337%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.s-depoimentos .container .depoimentos-info .depoimentos-content .depoimentos-itens img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.s-faq {
+  margin: 3rem 0;
+}
+.s-faq .container .faq-info h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+.s-faq .container .faq-info .faq-content .faq-itens .faq-item {
+  margin: 1rem 0;
+}
+
+.btn-collapse {
+  background-color: #c4c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-collapse.open {
+  background-color: #000;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+.btn-collapse::after {
+  content: "+";
+  font-size: 20px;
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+.btn-collapse.open::after {
+  content: "−";
+}
+.btn-collapse:hover {
+  background-color: #000;
+}
+
+.content-collapse {
+  display: none;
+  padding: 10px;
+  background-color: rgba(204, 68, 204, 0.2666666667);
+  border-radius: 0 0 0.4rem 0.4rem;
+  border: 0 1px 1px 1px solid #c4c4c4;
+  color: #fff;
+}
+.content-collapse.open {
+  display: block;
+}
+
+.s-whatsAppButton .whatsapp-link {
+  position: fixed;
+  bottom: 3rem;
+  right: 4rem;
+  background-color: #25D366;
+  color: #FFF;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 30px;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+.s-whatsAppButton .whatsapp-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px #25D366;
+}
+.s-whatsAppButton .whatsapp-link .whatsapp-icon {
+  font-size: 4rem;
+  margin-top: 2px;
 }/*# sourceMappingURL=main.css.map */
