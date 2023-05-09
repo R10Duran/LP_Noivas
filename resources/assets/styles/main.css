@@ -145,6 +145,9 @@ li {
 header nav .social-nav {
   background-color: #ddc0a6;
 }
+header nav .social-nav .container .logo-nav-img {
+  display: flex;
+}
 header nav .social-nav .container .social-nav-itens {
   padding: 1rem 0;
   display: flex;
@@ -408,6 +411,7 @@ li {
 }
 .s-sobre .container .content-sobre .video-sobre-apresentation .item-video-sobre video {
   margin-top: 3rem;
+  border-radius: 30px 0 30px 0;
 }
 
 * {
@@ -482,6 +486,545 @@ li {
   margin: 0 auto;
 }
 
+.s-galeria .container .content-galeria .link-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.s-galeria .container .content-galeria .link-galeria a {
+  padding: 1rem 2rem;
+  border: 2px solid #ddc0a6;
+  border-radius: 100px;
+  color: #ddc0a6;
+}
 .s-galeria .container .content-galeria strong {
   color: #ddc0a6;
+}
+.s-galeria .container .content-galeria .box-galeria {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.s-galeria .container .content-galeria .box-galeria img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.divisoria-sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+}
+
+.divisoria-sections2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.s-servicos .container .content-servicos strong {
+  color: #ddc0a6;
+}
+.s-servicos .container .content-servicos .box-servicos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-servicos .container .content-servicos .box-servicos .left-servicos {
+  width: 40%;
+  -moz-column-count: 2;
+       column-count: 2;
+  gap: 4rem;
+}
+.s-servicos .container .content-servicos .box-servicos .left-servicos img {
+  border-radius: 4px;
+  padding: 2rem 5rem;
+  background: #ddc0a6;
+  margin-top: 2rem;
+}
+.s-servicos .container .content-servicos .box-servicos .right-servicos {
+  width: 60%;
+  padding-left: 4rem;
+}
+.s-servicos .container .content-servicos .link-servicos {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-servicos .container .content-servicos .link-servicos a {
+  padding: 1rem 2rem;
+  border: 2px solid #ddc0a6;
+  border-radius: 100px;
+  color: #ddc0a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.s-depoimentos .container .content-depoimentos strong {
+  color: #ddc0a6;
+}
+.s-depoimentos .container .content-depoimentos .box-depoimentos {
+  display: flex;
+  gap: 4rem;
+}
+.s-depoimentos .container .content-depoimentos .box-depoimentos .item-depoimento {
+  margin-top: 3rem;
+  height: 43rem;
+  width: 40rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+.s-depoimentos .container .content-depoimentos .box-depoimentos .item-depoimento img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  margin-top: 2rem;
+}
+.s-depoimentos .container .content-depoimentos .box-depoimentos .item-depoimento .text-depoimento {
+  margin-top: 0.5rem;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+.s-depoimentos .container .content-depoimentos .box-depoimentos .item-depoimento .text-depoimento span {
+  font-size: 4rem;
+}
+.s-depoimentos .container .content-depoimentos .box-depoimentos .item-depoimento .name-depoimento {
+  margin-top: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.s-contato {
+  margin-bottom: 10rem;
+}
+.s-contato .container .content-contato strong {
+  color: #ddc0a6;
+}
+.s-contato .container .content-contato .box-contato {
+  display: flex;
+  gap: 4rem;
+}
+.s-contato .container .content-contato .box-contato .box-left-contato {
+  width: 60%;
+}
+.s-contato .container .content-contato .box-contato .box-left-contato .form-contato {
+  background: #ddc0a6;
+  width: 100%;
+  height: auto;
+  border-radius: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  color: #fff;
+}
+.s-contato .container .content-contato .box-contato .box-left-contato .form-contato button {
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  background: #ddc0a6;
+  color: #fff;
+  width: 100%;
+  margin-top: 2rem;
+}
+.s-contato .container .content-contato .box-contato .box-left-contato .form-contato .form-row {
+  display: flex;
+  gap: 4rem;
+}
+.s-contato .container .content-contato .box-contato .box-left-contato .form-contato .form-row .form-column {
+  display: flex;
+  flex-direction: column;
+}
+.s-contato .container .content-contato .box-contato .box-left-contato .form-contato .form-row .form-column input {
+  padding: 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.s-contato .container .content-contato .box-contato .box-right-contato {
+  width: 40%;
+}
+.s-contato .container .content-contato .box-contato .box-right-contato img {
+  margin-top: -4rem;
+}
+.s-contato .container .content-contato .box-contato .box-right-contato h3 {
+  color: #001b64;
+}
+
+#mensagem {
+  height: 8rem;
+  width: 100%;
+  border-radius: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.s-footer {
+  background: #ddc0a6;
+  padding: 4rem 0;
 }/*# sourceMappingURL=main.css.map */
