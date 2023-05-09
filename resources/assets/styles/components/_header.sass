@@ -1,20 +1,26 @@
+@import './_reset'
 @import './_pattern'
 @import './_responsive'
 
 header
-  padding: 2rem 0
-  top: 0
-  position: fixed
-  background: #fff
-  width: 100vw
-  background: #fff
   nav
-    display: flex
-    justify-content: space-between
-    align-items: center
-    .logo-nav
-      max-width: 100%
-    ul
-      display: flex
-      justify-content: center
-      align-items: center
+    .social-nav
+      background-color: #ddc0a6
+      .container
+        .social-nav-itens
+          padding: 1rem 0
+          display: flex
+          gap: 1rem
+          justify-content: end
+          align-items: center
+          color: #001b64
+        .links-nav-itens
+          display: flex
+          justify-content: space-between
+          align-items: center
+          ul
+            display: flex
+            gap: 2rem
+            li
+              a
+                color: #001b64

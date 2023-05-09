@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +18,21 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
 }
 
 img {
@@ -52,302 +66,422 @@ li {
 }
 
 .container {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
 }
 
-header {
-  padding: 2rem 0;
-  top: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
   position: fixed;
-  background: #fff;
-  width: 100vw;
-  background: #fff;
-}
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav .logo-nav {
-  max-width: 100%;
-}
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.s-banner {
-  margin-top: 11rem;
-}
-.s-banner .banner-principal {
-  height: 80vh;
-}
-.s-banner .banner-principal img {
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
 }
 
-.s-release {
-  margin: 3rem 0;
-}
-.s-release .container .release-infos h2 {
-  text-align: center;
-  margin: 2rem 0;
-}
-.s-release .container .release-infos .text-release {
-  display: flex;
-  gap: 4rem;
-}
-.s-release .container .release-infos .text-release p {
-  margin: 2rem 0;
-}
-.s-release .container .release-infos .text-release .p-text-release {
-  width: 50%;
-}
-.s-release .container .release-infos .text-release .p-text-release ul li {
-  padding-left: 2rem;
-}
-.s-release .container .release-infos .text-release .img-text-release {
-  width: 50%;
-  background-color: #c4c4c4;
-  padding: 2%;
-}
-
-.s-history {
-  margin: 3rem 0;
-}
-.s-history .container .info-history h2 {
-  text-align: center;
-  margin: 2rem 0;
-}
-.s-history .container .info-history .history-content .history-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-  margin: 5rem 0;
-}
-.s-history .container .info-history .history-content .history-item img {
-  max-width: 40%;
-  width: 50%;
-}
-.s-history .container .info-history .history-content .history-item p {
-  width: 50%;
-}
-.s-history .container .info-history .history-content .reverse {
-  flex-direction: row-reverse;
-}
-
-.s-galery {
-  margin: 3rem 0;
-}
-.s-galery .container .galery-info h2 {
-  text-align: center;
-  margin: 2rem 0;
-}
-.s-galery .container .galery-info .galery-content {
-  display: flex;
-  margin: 4rem 0;
-  gap: 6rem;
-}
-.s-galery .container .galery-info .galery-content .galery-itens {
-  text-align: center;
-  border: 1px solid red;
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.s-depoimentos {
-  margin: 3rem 0;
-}
-.s-depoimentos .container .depoimentos-info h2 {
-  margin: 2rem 0;
-  text-align: center;
-}
-.s-depoimentos .container .depoimentos-info .depoimentos-content {
-  display: flex;
-  gap: 6rem;
-  width: 100%;
-}
-.s-depoimentos .container .depoimentos-info .depoimentos-content .depoimentos-itens {
-  border: 1px solid red;
-  border-radius: 10px;
-  padding: 2rem;
-  text-align: center;
-  width: 33.3337%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.s-depoimentos .container .depoimentos-info .depoimentos-content .depoimentos-itens img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 100%;
-  text-align: center;
-  margin: 1rem 0;
-}
-
-.checked {
-  color: orange;
-}
-
-.s-faq {
-  margin: 3rem 0;
-}
-.s-faq .container .faq-info h2 {
-  text-align: center;
-  margin: 2rem 0;
-}
-.s-faq .container .faq-info .faq-content .faq-itens .faq-item {
-  margin: 1rem 0;
-}
-
-.btn-collapse {
-  background-color: rgba(0, 27, 100, 0.9294117647);
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  width: 100%;
-  text-align: left;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-.btn-collapse.open {
-  background-color: #001b64;
-  border-radius: 0.4rem 0.4rem 0 0;
-}
-.btn-collapse::after {
-  content: "+";
-  font-size: 20px;
-  margin-left: auto;
-  transition: transform 0.3s ease;
-}
-.btn-collapse.open::after {
-  content: "−";
-}
-.btn-collapse:hover {
-  background-color: #001b64;
-}
-
-.content-collapse {
-  display: none;
-  padding: 10px;
-  background-color: rgba(0, 27, 100, 0.1960784314);
-  border-radius: 0 0 0.4rem 0.4rem;
-  border: 0 1px 1px 1px solid #c4c4c4 !important;
-}
-.content-collapse.open {
+img {
+  max-width: 100%;
   display: block;
 }
 
-.s-whatsAppButton .whatsapp-link {
-  position: fixed;
-  bottom: 3rem;
-  right: 4rem;
-  background-color: #25D366;
-  color: #FFF;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-size: 30px;
-  z-index: 9999;
-  transition: all 0.3s ease-in-out;
-}
-.s-whatsAppButton .whatsapp-link:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 15px #25D366;
-}
-.s-whatsAppButton .whatsapp-link .whatsapp-icon {
-  font-size: 4rem;
-  margin-top: 2px;
-}
-
-.s-form {
-  margin: 3rem 0;
-}
-.s-form .container h2 {
-  margin: 2rem 0;
-  text-align: center;
-}
-.s-form .container .form-info {
-  display: flex;
-  gap: 6rem;
-  justify-content: center;
-  align-items: center;
-}
-.s-form .container .form-info .form-content {
-  border: 1px solid red;
-  width: 70%;
-  padding: 2rem;
-}
-.s-form .container .form-info .form-content h3 {
-  text-align: center;
-  margin: 1rem 0;
-  color: #001b64;
-}
-.s-form .container .form-info .form-content a .whatsForm {
-  text-align: center;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  background: #25D366;
-  padding: 1rem;
-  color: #fff;
-  border-radius: 5px;
-}
-.s-form .container .form-info .form-content a .whatsForm:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 0px 15px #25D366;
-  transition: all 0.3s;
-}
-.s-form .container .form-info .form-content label {
-  font-weight: bold;
-  color: #001b64;
-}
-.s-form .container .form-info .form-content input {
-  padding: 1rem;
-  border-radius: 20px;
-  width: 100%;
-  border: 1px solid #c4c4c4;
-  margin: 1rem 0;
-}
-.s-form .container .form-info .form-content input[type=submit] {
-  background-color: rgba(0, 27, 100, 0.9294117647);
-  color: #fff;
+button {
   border: none;
-  border-radius: 4px;
-  padding: 1rem 2rem;
-  width: 100%;
+  outline: none;
   cursor: pointer;
 }
-.s-form .container .form-info .form-content input[type=submit]:hover {
-  background-color: #001b64;
-  transition: all 0.2s;
-  transform: scale(1.003);
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
 }
-.s-form .container .form-info .form-content textarea {
-  width: 100%;
-  margin: 1rem 0;
+
+input {
+  border: none;
+  border-radius: 5px;
 }
-.s-form .container .form-info .endereco-loja {
-  width: 30%;
+
+a {
+  text-decoration: none;
 }
-.s-form .container .form-info .endereco-loja .adress-itens {
-  margin: 3rem 0;
+
+li {
+  list-style: none;
 }
-.s-form .container .form-info .endereco-loja .adress-itens img {
+
+.container {
+  width: 70%;
   margin: 0 auto;
+}
+
+header nav .social-nav {
+  background-color: #ddc0a6;
+}
+header nav .social-nav .container .social-nav-itens {
+  padding: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  align-items: center;
+  color: #001b64;
+}
+header nav .social-nav .container .links-nav-itens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .social-nav .container .links-nav-itens ul {
+  display: flex;
+  gap: 2rem;
+}
+header nav .social-nav .container .links-nav-itens ul li a {
+  color: #001b64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.s-banner-home .container .content-banner-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12rem;
+  gap: 3rem;
+}
+.s-banner-home .container .content-banner-home .img-banner-home img {
+  height: 30rem;
+  border-radius: 30px 0 30px 0;
+}
+.s-banner-home .container .content-banner-home .text-banner-home {
+  background: #fff;
+  padding: 5rem 3rem;
+  border-radius: 0 30px 0 30px;
+}
+.s-banner-home .container .content-banner-home .text-banner-home img {
+  width: 12rem;
+}
+.s-banner-home .container .content-banner-home .text-banner-home .link-banner-home {
+  margin-top: 2rem;
+}
+.s-banner-home .container .content-banner-home .text-banner-home .link-banner-home a {
+  padding: 1rem 2rem;
+  background-color: #ddc0a6;
+  color: #fff;
+  border-radius: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.s-sobre {
+  margin-top: 13rem;
+}
+.s-sobre .container .content-sobre .box-sobre {
+  display: flex;
+  gap: 4rem;
+}
+.s-sobre .container .content-sobre .box-sobre .box-left-sobre {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.s-sobre .container .content-sobre .box-sobre .box-left-sobre strong {
+  color: #ddc0a6;
+}
+.s-sobre .container .content-sobre .box-sobre .box-left-sobre .box-left-check-itens {
+  margin-top: 2rem;
+}
+.s-sobre .container .content-sobre .box-sobre .box-left-sobre .contato-sobre-left {
+  margin-top: 3rem;
+}
+.s-sobre .container .content-sobre .box-sobre .box-left-sobre .contato-sobre-left a {
+  padding: 1rem 2rem;
+  border: 2px solid #ddc0a6;
+  border-radius: 100px;
+  color: #ddc0a6;
+}
+.s-sobre .container .content-sobre .box-sobre .box-right-sobre img {
+  height: 40rem;
+  border-radius: 0 30px 0 30px;
+}
+.s-sobre .container .content-sobre .box-numeros-sobre {
+  background: #ddc0a6;
+  display: flex;
+  margin: 10rem 0;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  color: #fff;
+  border-radius: 30px 0 30px 0;
+}
+.s-sobre .container .content-sobre .box-numeros-sobre .itens-numeros-sobre {
+  border-right: 2px solid #fff;
+  padding: 1rem 3rem;
+}
+.s-sobre .container .content-sobre .box-numeros-sobre .itens-numeros-sobre .number-sobre {
+  font-size: 3.5rem;
+}
+.s-sobre .container .content-sobre .box-numeros-sobre .itens-numeros-sobre .iten-sobre {
+  margin-left: -1rem;
+}
+.s-sobre .container .content-sobre .box-numeros-sobre .last-itens-numeros-sobre {
+  border-right: none;
+}
+.s-sobre .container .content-sobre .video-sobre-apresentation {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.s-sobre .container .content-sobre .video-sobre-apresentation strong {
+  color: #ddc0a6;
+}
+.s-sobre .container .content-sobre .video-sobre-apresentation .item-video-sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-sobre .container .content-sobre .video-sobre-apresentation .item-video-sobre video {
+  margin-top: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  font-size: 1.8rem;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  font-family: "Poppins";
+  background-image: url("/resources/assets/img/floral-simples.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.s-galeria .container .content-galeria strong {
+  color: #ddc0a6;
 }/*# sourceMappingURL=main.css.map */
