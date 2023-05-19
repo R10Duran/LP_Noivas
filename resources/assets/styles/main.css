@@ -18,11 +18,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -90,11 +85,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -189,11 +179,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -241,6 +226,10 @@ li {
   margin: 0 auto;
 }
 
+.s-banner-home {
+  margin-top: -4rem;
+  margin-bottom: 8rem;
+}
 .s-banner-home .container .content-banner-home {
   display: flex;
   align-items: center;
@@ -290,11 +279,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -343,7 +327,11 @@ li {
 }
 
 .s-sobre {
-  margin-top: 13rem;
+  margin-top: 3rem;
+}
+.s-sobre .container .content-sobre {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .s-sobre .container .content-sobre .box-sobre {
   display: flex;
@@ -434,11 +422,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -548,11 +531,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -657,11 +635,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -765,11 +738,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -900,11 +868,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
@@ -972,11 +935,6 @@ body {
   -webkit-font-smoothing: antialiased;
   width: 100%;
   font-family: "Poppins";
-  background-image: url("/resources/assets/img/floral-simples.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body::before {
   content: "";
