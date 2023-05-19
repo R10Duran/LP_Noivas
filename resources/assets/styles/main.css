@@ -43,7 +43,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -54,10 +54,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -110,7 +115,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -121,10 +126,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -134,6 +144,11 @@ li {
 
 header nav .social-nav {
   background-color: #ddc0a6;
+  padding: 2rem 0;
+}
+header nav .social-nav .container img {
+  position: absolute;
+  top: 0.5rem;
 }
 header nav .social-nav .container .logo-nav-img {
   display: flex;
@@ -144,6 +159,9 @@ header nav .social-nav .container .social-nav-itens {
   gap: 1rem;
   justify-content: end;
   align-items: center;
+  color: #001b64;
+}
+header nav .social-nav .container .social-nav-itens a {
   color: #001b64;
 }
 header nav .social-nav .container .links-nav-itens {
@@ -158,6 +176,10 @@ header nav .social-nav .container .links-nav-itens ul {
 header nav .social-nav .container .links-nav-itens ul li a {
   color: #001b64;
 }
+header nav .social-nav .container .links-nav-itens ul li a::hover {
+  border-bottom: solid 2px #001b64;
+  transition: all 0.2s;
+}
 
 * {
   margin: 0;
@@ -204,7 +226,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -215,10 +237,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -304,7 +331,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -315,10 +342,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -447,7 +479,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -458,10 +490,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -556,7 +593,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -567,10 +604,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -660,7 +702,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -671,10 +713,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -763,7 +810,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -774,10 +821,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -893,7 +945,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -904,10 +956,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -960,7 +1017,7 @@ button {
 
 p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
@@ -971,10 +1028,15 @@ input {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 li {
   list-style: none;
+}
+
+span {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -985,4 +1047,44 @@ li {
 .s-footer {
   background: #ddc0a6;
   padding: 4rem 0;
+  color: #fff;
+}
+.s-footer .container .content-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+  white-space: nowrap;
+}
+.s-footer .container .content-footer .box-left-footer strong {
+  color: #fff;
+}
+.s-footer .container .content-footer .box-left-footer .icons-social-footer {
+  margin-top: 1rem;
+}
+.s-footer .container .content-footer .box-left-footer .icons-social-footer a {
+  color: #fff;
+}
+.s-footer .container .content-footer .box-left-footer .icons-social-footer a i {
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+.s-footer .container .content-footer .box-right-footer {
+  display: flex;
+}
+.s-footer .container .content-footer .box-right-footer .itens-footer-right {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+.s-footer .container .content-footer .box-right-footer .itens-footer-right strong {
+  margin-bottom: 1rem;
+}
+.s-footer .container .content-footer .box-right-footer .itens-footer-right a {
+  color: #fff;
+}
+.s-footer .container .content-footer .box-right-footer .itens-footer-right span i {
+  margin-right: 0.8rem;
+}
+.s-footer .container .content-footer .box-right-footer .itens-footer-right span a {
+  padding: 2rem 0;
 }/*# sourceMappingURL=main.css.map */

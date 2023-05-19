@@ -6,7 +6,11 @@ header
   nav
     .social-nav
       background-color: #ddc0a6
+      padding: 2rem 0
       .container
+        img
+          position: absolute
+          top: 0.5rem
         .logo-nav-img
           display: flex
         .social-nav-itens
@@ -16,6 +20,8 @@ header
           justify-content: end
           align-items: center
           color: #001b64
+          a
+            color: #001b64
         .links-nav-itens
           display: flex
           justify-content: space-between
@@ -26,4 +32,6 @@ header
             li
               a
                 color: #001b64
-              
+                &::hover
+                  border-bottom: solid 2px #001b64
+                  transition: all 0.2s

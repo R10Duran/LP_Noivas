@@ -65,10 +65,19 @@
       <nav>
         <div class="social-nav">
           <div class="container">
+            <img
+              src="./resources/assets/img/logo-julia-golldenzon.webp"
+              width="105"
+              alt=""
+            />
             <div class="social-nav-itens">
               <p>Nos siga nas redes sociais:</p>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.facebook.com/ateliejuliagolldenzon/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/juliagolldenzon/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
             <div class="links-nav-itens">
               <div class="logo-nav-link">
@@ -76,19 +85,19 @@
               </div>
               <ul>
                 <li>
-                  <a href="">Sobre</a>
+                  <a href="#sobre">Sobre</a>
                 </li>
                 <li>
-                  <a href="">Galeria</a>
+                  <a href="#galeria">Galeria</a>
                 </li>
                 <li>
-                  <a href="">Serviços</a>
+                  <a href="#clientes">Clientes</a>
                 </li>
                 <li>
-                  <a href="">Depoimentos</a>
+                  <a href="#contato">Contato</a>
                 </li>
                 <li>
-                  <a href="">Contato</a>
+                  <a href="https://www.juliagolldenzon.com.br/" target="_blank">Loja</a>
                 </li>
               </ul>
             </div>
@@ -102,6 +111,7 @@
         <div class="content-sobre">
           <div class="box-sobre">
             <div class="box-left-sobre">
+              <div id="sobre"></div>
               <strong>Sobre Nós</strong>
               <h2>O casamento perfeito</h2>
               <p>
@@ -147,6 +157,8 @@
       />
     </div>
 
+    <div id="galeria"></div>
+
     <section class="s-galeria">
       <div class="container">
         <div class="content-galeria">
@@ -189,6 +201,8 @@
         </div>
       </div>
     </section>
+
+    <div id="clientes"></div>
 
     <section class="s-galeria">
       <div class="container">
@@ -321,6 +335,7 @@
         </div>
       </div>
     </section> -->
+    
 
     <div class="divisoria-sections2">
       <img
@@ -328,6 +343,8 @@
         alt=""
       />
     </div>
+
+    <div id="contato"></div>
 
     <section class="s-contato">
       <div class="container">
@@ -368,7 +385,12 @@
                     </div>
                   </div>
                   <label for="mensagem">Mensagem:</label> <br />
-                  <textarea id="mensagem" name="mensagem" required></textarea>
+                  <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    required
+                    style="padding: 1rem"
+                  ></textarea>
                   <button type="submit">Enviar</button>
                 </form>
               </div>
@@ -408,13 +430,47 @@
         <div class="content-footer">
           <div class="box-left-footer">
             <img src="" alt="" />
-            <p>Breve descrição...</p>
+            <strong>Siga-nos</strong>
             <div class="icons-social-footer">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
-          <div class="box-right-footer"></div>
+          <div class="box-right-footer">
+            <div class="itens-footer-right">
+              <strong>Atendimento</strong>
+              <span><i class="fa-solid fa-phone"></i><a href=""> Telefone: (21) 3489-9733</a></span>
+              <span><i class="fa-brands fa-whatsapp"></i><a href=""> Whatsapp: (21) 3489-9733</a></span> 
+              <span><i class="fa-solid fa-square-envelope"></i><a href=""> E-mail: loja@ateliejuliagolldenzon.com</a></span>
+              <span>   <i class="fa-regular fa-clock"></i>             Seg à Sex das 10:00h às 19:00h <br />
+                Sábado das 10:00 às 14:00h</span>
+
+              <span 
+                ><i class="fa-solid fa-location-dot"></i>Endereço<a style="margin-left: 1rem;" target="_blank"
+                  href="https://goo.gl/maps/hnvRBomTkQBtGKiY6?coh=178571&entry=tt"
+                  >Ver no mapa</a
+                ></span
+              >
+              <p>
+                R. Jerônimo Monteiro, 73 - 101 - Leblon, Rio de Janeiro - RJ
+              </p>
+            </div>
+            <div class="itens-footer-right">
+              <strong>Conheça nossa loja online</strong>
+              <a href="https://www.juliagolldenzon.com.br/" target="_blank">
+                <img
+                  src="./resources/assets/img/logo-julia-golldenzon.webp"
+                  alt=""
+                  width="105"
+                />
+              </a>
+              <p></p>
+                <a href="https://www.juliagolldenzon.com.br/" target="_blank"
+                  >https://www.juliagolldenzon.com.br/</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
