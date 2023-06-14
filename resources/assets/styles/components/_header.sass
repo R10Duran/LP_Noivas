@@ -6,11 +6,11 @@ header
   nav
     .social-nav
       background-color: #ddc0a6
-      padding: 4rem 0
+      padding: 3rem 0
       .container
         img
           position: absolute
-          top: 1rem
+          top: 1.7rem
         .logo-nav-img
           display: flex
         .social-nav-itens
@@ -35,3 +35,11 @@ header
                 &::hover
                   border-bottom: solid 2px #001b64
                   transition: all 0.2s
+
+@media only screen and (max-width: 768px)
+  .social-nav-itens
+    display: none !important
+  .links-nav-itens
+    display: none !important
+  .social-nav
+    padding: 7rem 0 !important

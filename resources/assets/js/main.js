@@ -1,30 +1,64 @@
-// Seleciona todos os botões de collapse
-const btnCollapses = document.querySelectorAll('.btn-collapse')
+const dropdownToggles = document.querySelectorAll('.dropdown-toggle')
 
-// Adiciona um listener de evento a cada botão
-btnCollapses.forEach(btnCollapse => {
-  btnCollapse.addEventListener('click', function () {
-    // Seleciona o conteúdo a ser colapsado (o irmão imediatamente posterior ao botão)
-    const contentCollapse = this.nextElementSibling
-
-    // Fecha todos os outros conteúdos
-    btnCollapses.forEach(otherBtnCollapse => {
-      if (otherBtnCollapse !== this) {
-        const otherContentCollapse = otherBtnCollapse.nextElementSibling
-        otherContentCollapse.style.display = 'none'
-        otherBtnCollapse.classList.remove('open')
-      }
-    })
-
-    // Verifica se o conteúdo está visível
-    if (getComputedStyle(contentCollapse).display === 'none') {
-      // Se estiver escondido, exibe o conteúdo e adiciona a classe "open" ao botão
-      contentCollapse.style.display = 'block'
-      this.classList.add('open')
-    } else {
-      // Caso contrário, esconde o conteúdo e remove a classe "open" do botão
-      contentCollapse.style.display = 'none'
-      this.classList.remove('open')
-    }
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    toggle.parentNode.classList.toggle('active')
   })
 })
+
+// Lógica para menu-mobile
+// const tratamentosMobile = document.querySelector('.has-submenu-mobile')
+
+// tratamentosMobile.addEventListener('click', function () {
+//   this.classList.toggle('active')
+// })
+
+// const esteticaMobile = document.querySelector('.has-submenu--estetica-mobile')
+
+// esteticaMobile.addEventListener('click', function (e) {
+//   e.stopPropagation()
+//   this.classList.toggle('active')
+// })
+
+// const cirurgiaMobile = document.querySelector('.has-submenu--cirurgia-mobile')
+
+// cirurgiaMobile.addEventListener('click', function (e) {
+//   e.stopPropagation()
+//   this.classList.toggle('active')
+// })
+
+// abrir menu-mobile
+function openNav() {
+  document.getElementById('mySidepanel').style.width = '250px'
+}
+
+function closeNav() {
+  document.getElementById('mySidepanel').style.width = '0'
+}
+
+// logica drop-down-menu-mobile
+// const dropdowns = document.querySelectorAll('select')
+// dropdowns.forEach(dropdown => {
+//   dropdown.addEventListener('change', event => {
+//     const selectedOption = event.target.options[event.target.selectedIndex]
+//     if (selectedOption.getAttribute('data-href')) {
+//       window.location.href = selectedOption.getAttribute('data-href')
+//     }
+//   })
+// })
+
+// Lógica collapse Menu mobile
+var coll = document.getElementsByClassName('collapsible')
+var i
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+    var content = this.nextElementSibling
+    if (content.style.display === 'block') {
+      content.style.display = 'none'
+    } else {
+      content.style.display = 'block'
+    }
+  })
+}

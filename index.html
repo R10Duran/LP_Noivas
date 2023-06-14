@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./resources/assets/styles/main.css" />
     <link rel="stylesheet" href="./resources/assets/styles/carrousel.css" />
     <link rel="stylesheet" href="./resources/assets/styles/header-effects.css">
+    <link rel="stylesheet" href="./resources/assets/styles/header-mobile.css">
 
     <!--Font Awesome-->
     <link
@@ -104,6 +105,28 @@
             </div>
           </div>
         </div>
+        <div id="mySidepanel" class="sidepanel">
+          <div class="call" style="margin-left: 0.3rem">
+            <a
+              style="color: #fff"
+              class="button-wpp"
+              href=""
+              onclick=" ga('send', 'event', 'whatsapp message', 'asc-mobile-desktop', 'botao 1');"
+              ><i class="fa fa-whatsapp"></i> Agendar Visita</a
+            >
+          </div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          <a href="/" onclick="closeNav()">Início</a>
+          <a href="#sobre" onclick="closeNav()">Noivas</a>
+          <a href="#galeria" onclick="closeNav()">Linha prêt-a-porter</a>
+          <a href="#clientes" onclick="closeNav()">Nossas noivas</a>
+
+          <a href="#contato" onclick="closeNav()">Contato</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
       </nav>
     </header>
 
@@ -167,15 +190,18 @@
             <img src="./resources/assets/img/vestido-img1.jpg" alt="" />
             <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
             <img src="./resources/assets/img/vestido-img3.jpg" alt="" />
-            <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
-            <img src="./resources/assets/img/vestido-img4.jpg" alt="" />
             <img src="./resources/assets/img/vestido-img5.jpg" alt="" />
-            <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
-            <img src="./resources/assets/img/vestido-img5.jpg" alt="" />
-            <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
+            <div id="more-images1" class="hidden">
+              <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img4.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img5.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img5.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
+            </div>
           </div>
           <div class="link-galeria">
-            <a href="">Ver Todos</a>
+            <button class="ver-todos" onclick="showMoreImages('more-images1', this)">Ver Todos</button>
           </div>
         </div>
       </div>
@@ -202,30 +228,33 @@
     </section>
 
     <div class="container" style="margin-bottom: 6rem;">
-      <img src="./resources/assets/img/banner-index-bloco.jpeg" alt="">
+      <img src="./resources/assets/img/Reduz-2.webp" alt="">
     </div>
     
 
     <div id="clientes"></div>
 
-    <section class="s-galeria">
+    <section class="s-galeria" style="margin-top: 7rem;">
       <div class="container">
         <div class="content-galeria">
-          <strong>Nossas noivas</strong>
-          <h2>Conheça nossas noivas</h2>
+          <strong>Galeria casual</strong>
+          <h2>Conheça nossa linha casual</h2>
           <div class="box-galeria">
-            <img src="./resources/assets/img/foto-noiva-exemplo1.jpeg" alt="" />
-            <img src="./resources/assets/img/foto-noiva-exemplo2.jpeg" alt="" />
-            <img src="./resources/assets/img/foto-noiva-exemplo3.jpeg" alt="" />
-            <img src="./resources/assets/img/foto-noiva-exemplo4.jpeg" alt="" />
-            <img src="./resources/assets/img/foto-noiva-exemplo5.jpeg" alt="" />
-            <img src="./resources/assets/img/foto-noiva-exemplo3.jpeg" alt="" />
-            <img src="./resources/assets/img/foto-noiva-exemplo2.jpeg" alt="" />
-            <img src="./resources/assets/img/foto-noiva-exemplo6.jpeg" alt="" />
-            <img src="./resources/assets/img/foto-noiva-exemplo3.jpeg" alt="" />
+            <img src="./resources/assets/img/vestido-img1.jpg" alt="" />
+            <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
+            <img src="./resources/assets/img/vestido-img3.jpg" alt="" />
+            <img src="./resources/assets/img/vestido-img5.jpg" alt="" />
+            <div id="more-images2" class="hidden">
+              <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img4.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img5.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img5.jpg" alt="" />
+              <img src="./resources/assets/img/vestido-img2.jpg" alt="" /> 
+            </div>
           </div>
           <div class="link-galeria">
-            <a href="">Ver Todos</a>
+            <button class="ver-todos" onclick="showMoreImages('more-images2', this)">Ver Todos</button>
           </div>
         </div>
       </div>
@@ -430,6 +459,16 @@
       </div>
     </section>
 
+    <section class="s-whatsAppButton">
+      <a
+        href="https://wa.me/+551152001198"
+        target="_blank"
+        class="whatsapp-link"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
+    </section>
+
     <footer class="s-footer">
       <div class="container">
         <div class="content-footer">
@@ -462,13 +501,13 @@
             </div>
             <div class="itens-footer-right">
               <!-- <strong>Conheça nossa loja online</strong> -->
-              <a href="https://www.juliagolldenzon.com.br/" target="_blank">
+              <!-- <a href="https://www.juliagolldenzon.com.br/" target="_blank">
                 <img
                   src="./resources/assets/img/logo-julia-golldenzon.webp"
                   alt=""
                   width="105"
                 />
-              </a>
+              </a> -->
               <p></p>
                 <!-- <a href="https://www.juliagolldenzon.com.br/" target="_blank"
                   >https://www.juliagolldenzon.com.br/</a
@@ -489,5 +528,20 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
+
+    <script>
+      function showMoreImages(containerId, link) {
+        // Obtém a referência para o container das imagens adicionais
+        var moreImagesContainer = document.getElementById(containerId);
+
+        // Altera o estilo do container para torná-lo visível
+        moreImagesContainer.classList.remove("hidden");
+
+        // Remove o link "Ver Todos" para evitar que seja clicado novamente
+        link.parentNode.parentNode.removeChild(link.parentNode);
+      }
+    </script>
+
+  <script src="./resources/assets/js/main.js"></script>
   </body>
 </html>
