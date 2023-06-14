@@ -526,6 +526,9 @@ h2 {
     display: flex !important;
     justify-content: center !important;
   }
+  .item-video-sobre video {
+    height: 350px !important;
+  }
 }
 * {
   margin: 0;
@@ -628,6 +631,9 @@ h2 {
   color: #ddc0a6;
   background: #fff;
   font-size: 1.8rem;
+}
+.s-galeria .container .content-galeria .link-galeria button:hover {
+  cursor: pointer;
 }
 .s-galeria .container .content-galeria strong {
   color: #ddc0a6;
