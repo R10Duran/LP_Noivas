@@ -87,13 +87,13 @@
               </div>
               <ul>
                 <li>
-                  <a href="#sobre" class="cool-link">Noivas</a>
+                  <a href="#noivas" class="cool-link">Noivas</a>
                 </li>
                 <li>
-                  <a href="#galeria" class="cool-link">Linha prêt-a-porter</a>
+                  <a href="#pre-porter" class="cool-link">Linha prêt-a-porter</a>
                 </li>
                 <li>
-                  <a href="#clientes" class="cool-link">Nossas noivas</a>
+                  <a href="#nossas-noivas" class="cool-link">Nossas noivas</a>
                 </li>
                 <li>
                   <a href="#contato" class="cool-link">Contato</a>
@@ -119,13 +119,12 @@
             >×</a
           >
           <a href="/" onclick="closeNav()">Início</a>
-          <a href="#sobre" onclick="closeNav()">Noivas</a>
-          <a href="#linha-porter" onclick="closeNav()">Linha prêt-a-porter</a>
-          <a href="#nossas-noivas" onclick="closeNav()">Nossas noivas</a>
-
-          <a href="#contato" onclick="closeNav()">Contato</a>
+          <a href="#noivas-mobile" onclick="closeNav()">Noivas</a>
+          <a href="#pre-porter-mobile" onclick="closeNav()">Linha prêt-a-porter</a>
+          <a href="#nossas-noivas-mobile" onclick="closeNav()">Nossas noivas</a>
+          <a href="#contato-mobile" onclick="closeNav()">Contato</a>
+          <a href="https://www.juliagolldenzon.com.br/" onclick="closeNav()">Loja</a>
         </div>
-
         <button class="openbtn" onclick="openNav()">☰</button>
       </nav>
     </header>
@@ -133,7 +132,7 @@
     <section class="s-sobre">
       <div class="container">
         <div class="content-sobre">
-          <div class="box-sobre">
+          <div class="box-sobre"> 
             <div class="box-left-sobre">
               <div id="sobre"></div>
               <strong>Noivas</strong>
@@ -145,6 +144,7 @@
                 No primeiro encontro exploramos as possibilidades de tecidos, rendas, bordados, acabamentos, caimentos, enfim, namoramos juntas a criação do seu croqui. A partir daí as provas dão forma ao vestido e é uma troca constante que nos permite entrar no mundo da nossa cliente para entender seus desejos e deixá-las se sentirem à vontade para explorar o mundo da alta costura que amamos tanto.
               </p>
             </div>
+            <div id="noivas"></div>
             <div class="box-right-sobre">
               <img src="./resources/assets/img/img-exemplo-noiva.jpeg" alt="" />
             </div>
@@ -162,14 +162,7 @@
       </div>
     </section>
 
-    <!-- <div class="divisoria-sections" style="margin-top: 4rem">
-      <img
-        src="./resources/assets/img/coracao-flor-removebg-preview.png"
-        alt=""
-      />
-    </div> -->
-
-    <div id="linha-porter"></div>
+    <div id="pre-porter"></div>
 
     <section class="s-galeria" style="margin-top: 7rem;">
       <div class="container">
@@ -212,28 +205,30 @@
         </div>
       </div>
     </section>
-
+    
+    
     <div id="bannerMobile" class="container" style="margin-bottom: 6rem;">
+      <div id="nossas-noivas-mobile"></div>
       <img src="./resources/assets/img/Reduz-2.webp" alt="">
     </div>
-
+    
     <div id="bannerDesktop" class="container" style="margin-bottom: 6rem;">
       <img src="./resources/assets/img/banner-index-bloco.jpeg" alt="">
     </div>
-    
 
-    <div id="clientes"></div>
+    <div id="nossas-noivas"></div>
 
     <section class="s-galeria" style="margin-top: 7rem;">
       <div class="container">
         <div class="content-galeria">
-          <strong>Galeria casual</strong>
-          <h2>Conheça nossa linha casual</h2>
+          <strong>Nossas noivas</strong>
+          <h2>Nossas noivas</h2>
           <div class="box-galeria">
             <img src="./resources/assets/img/vestido-img1.jpg" alt="" />
             <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
             <img src="./resources/assets/img/vestido-img3.jpg" alt="" />
             <img src="./resources/assets/img/vestido-img5.jpg" alt="" />
+            <div id="contato-mobile"></div>
             <div id="more-images2" class="hidden">
               <img src="./resources/assets/img/vestido-img2.jpg" alt="" />
               <img src="./resources/assets/img/vestido-img4.jpg" alt="" />
@@ -243,6 +238,7 @@
               <img src="./resources/assets/img/vestido-img2.jpg" alt="" /> 
             </div>
           </div>
+          
           <div class="link-galeria">
             <button class="ver-todos" onclick="showMoreImages('more-images2', this)">Ver Todos</button>
           </div>
@@ -250,9 +246,9 @@
       </div>
     </section>
 
-    <div id="nossas-noivas"></div>
+    <div id="contato"></div>
 
-    <section class="s-contato">
+    <section class="s-contato" style="margin-top: 4rem;">
       <div class="container">
         <div class="content-contato">
           <strong>Contato</strong>
