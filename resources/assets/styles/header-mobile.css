@@ -1,5 +1,9 @@
 @media screen and (max-width: 768px) {
 
+  #bannerDesktop{
+    display: none;
+  }
+
   header{
     position: fixed;
     width: 100%;
@@ -157,6 +161,10 @@
   }
 
   .openbtn{
+    display: none;
+  }
+
+  #bannerMobile{
     display: none;
   }
 
