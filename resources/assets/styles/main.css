@@ -520,6 +520,7 @@ h2 {
   }
   .box-left-sobre {
     width: 100% !important;
+    margin-top: -4rem !important;
   }
   .box-right-sobre {
     width: 100% !important;
