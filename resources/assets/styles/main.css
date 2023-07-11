@@ -520,7 +520,7 @@ h2 {
   }
   .box-left-sobre {
     width: 100% !important;
-    margin-top: -19rem !important;
+    margin-top: -16rem !important;
   }
   .box-right-sobre {
     width: 100% !important;
@@ -529,9 +529,6 @@ h2 {
   }
   .item-video-sobre video {
     height: 350px !important;
-  }
-  #player {
-    margin-top: -4rem !important;
   }
 }
 * {
